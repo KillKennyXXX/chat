@@ -1,0 +1,8 @@
+#chatWindow {
+-fx-background-color: #bbb54b;
+}
+
+#logoutButton{
+-fx-background-color: black;
+-fx-color: #000;
+}
