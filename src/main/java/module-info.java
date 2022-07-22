@@ -5,4 +5,6 @@ module com.gb.chat {
 
     opens com.gb.chat to javafx.fxml;
     exports com.gb.chat;
+    exports com.gb.chat.controllers;
+    opens com.gb.chat.controllers to javafx.fxml;
 }
