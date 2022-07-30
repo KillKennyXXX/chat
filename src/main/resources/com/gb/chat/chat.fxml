@@ -5,6 +5,7 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.ListView?>
 <?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextArea?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
@@ -30,22 +31,22 @@
                     <items>
                       <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
                            <children>
-                              <ListView fx:id="chatList" layoutX="70.0" layoutY="23.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                              <TextArea fx:id="chatList" layoutX="88.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
                            </children>
                         </AnchorPane>
                       <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="68.0" prefWidth="552.0">
                            <children>
-                              <Button fx:id="sendButton" layoutX="446.0" layoutY="9.0" mnemonicParsing="false" onAction="#onSend" prefHeight="34.0" prefWidth="102.0" text="Send" AnchorPane.bottomAnchor="42.0" AnchorPane.leftAnchor="446.0" AnchorPane.rightAnchor="4.0" AnchorPane.topAnchor="9.0">
+                              <Button fx:id="sendButton" layoutX="446.0" layoutY="9.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="102.0" text="Send" AnchorPane.bottomAnchor="42.0" AnchorPane.leftAnchor="446.0" AnchorPane.rightAnchor="4.0" AnchorPane.topAnchor="9.0">
                                  <font>
                                     <Font size="20.0" />
                                  </font>
                               </Button>
-                              <TextField fx:id="msgText" layoutY="9.0" onKeyPressed="#onMsgKeyPress" prefHeight="34.0" prefWidth="443.0">
+                              <TextField fx:id="msgText" layoutY="9.0" prefHeight="34.0" prefWidth="443.0">
                                  <font>
                                     <Font size="21.0" />
                                  </font>
                               </TextField>
-                              <Button fx:id="clearButton" layoutX="392.0" layoutY="56.0" mnemonicParsing="false" onAction="#onClear" onKeyPressed="#onSend" text="Clear" />
+                              <Button fx:id="clearButton" layoutX="392.0" layoutY="56.0" mnemonicParsing="false" onAction="#onClear" text="Clear" />
                            </children>
                         </AnchorPane>
                     </items>
@@ -56,7 +57,7 @@
                         <Image url="@logo.jpg" />
                      </image>
                   </ImageView>
-                  <Label fx:id="userID" depthTest="DISABLE" layoutX="14.0" layoutY="14.0" prefHeight="18.0" prefWidth="68.0" text="User1" textFill="#a43434">
+                  <Label fx:id="userID" depthTest="DISABLE" layoutX="14.0" layoutY="31.0" prefHeight="24.0" prefWidth="450.0" text="User1" textFill="#a43434">
                      <font>
                         <Font name="MS Gothic" size="23.0" />
                      </font>
